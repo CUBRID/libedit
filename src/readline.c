@@ -325,20 +325,11 @@ rl_initialize(void)
 
 	/* set default mode to "emacs"-style and read setting afterwards */
 	/* so this can be overridden */
-	el_set(e, EL_EDITOR, "emacs");
+	el_set(e, EL_EDITOR, "vi");
 	if (rl_terminal_name != NULL)
 		el_set(e, EL_TERMINAL, rl_terminal_name);
 	else
 		el_get(e, EL_TERMINAL, &rl_terminal_name);
-
-	/*
-	 * Word completion - this has to go AFTER rebinding keys
-	 * to emacs-style.
-	 */
-	el_set(e, EL_ADDFN, "rl_complete",
-	    "ReadLine compatible completion function",
-	    _el_rl_complete);
-	el_set(e, EL_BIND, "^I", "rl_complete", NULL);
 
 	/*
 	 * Send TSTP when ^Z is pressed.

@@ -42,7 +42,6 @@
 /*
  * Local defaults
  */
-#define	KSHVI
 #define	VIDEFAULT
 #define	ANCHOR
 
