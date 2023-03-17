@@ -384,7 +384,7 @@ static const el_action_t  el_map_vi_insert[] = {
 	/*   6 */	ED_NEXT_CHAR,		/* ^F */
 	/*   7 */	ED_UNASSIGNED,		/* ^G */
 	/*   8 */	VI_DELETE_PREV_CHAR,	/* ^H */   /* BackSpace key */
-	/*   9 */	ED_UNASSIGNED,		/* ^I */   /* Tab Key */
+	/*   9 */	ED_INSERT,		/* ^I */   /* Tab Key */
 	/*  10 */	ED_NEWLINE,		/* ^J */
 	/*  11 */	ED_KILL_LINE,		/* ^K */
 	/*  12 */	ED_CLEAR_SCREEN,	/* ^L */
