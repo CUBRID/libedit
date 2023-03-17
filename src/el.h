@@ -48,7 +48,6 @@
 #define	KSHVI
 #endif
 
-#if !def
 #define	VIDEFAULT
 #define	ANCHOR
 
