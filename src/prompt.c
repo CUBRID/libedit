@@ -97,7 +97,7 @@ prompt_print(EditLine *el, int op)
 		p = ct_decode_string((char *)(void *)(*elp->p_func)(el),
 		    &el->el_scratch);
 
-	for (; *p; p++) {
+	for (; p && *p; p++) {
 		if (elp->p_ignore == *p) {
 			ignore = !ignore;
 			continue;
